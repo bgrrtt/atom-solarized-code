@@ -1,7 +1,7 @@
 {
   "name": "solarized-code-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Solarized (Dark) Syntax Theme for increased code readability.",
   "keywords": [
     "syntax",

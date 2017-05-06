@@ -1,0 +1,62 @@
+.syntax--source.syntax--css {
+  .syntax--entity.syntax--name {
+    color: @blue;
+  }
+  .syntax--punctuation.syntax--section {
+    color: @base0;
+  }
+  .syntax--punctuation.syntax--separator {
+    color: @syntax-text-color;
+  }
+  .syntax--punctuation.syntax--terminator {
+    color: @syntax-text-color;
+  }
+  .syntax--punctuation.syntax--definition {
+    &.syntax--entity {
+      color: @base0;
+    }
+    &.syntax--constant {
+      color: @syntax-text-color;
+    }
+  }
+  .syntax--brace {
+    color: @blue;
+  }
+  .syntax--variable {
+    color: @blue;
+  }
+  .syntax--attribute-name.syntax--class {
+    color: @blue;
+    font-weight: bold;
+  }
+  .syntax--property-name {
+    color: @base1;
+  }
+  .syntax--property-value {
+    color: @cyan;
+  }
+  .syntax--unit {
+    color: @cyan;
+  }
+  .syntax--support.syntax--function {
+    color: @blue;
+  }
+  .syntax--rgb-value {
+    color: @cyan;
+  }
+  .syntax--id {
+    color: @yellow;
+    font-weight: bold;
+    //font-style: italic;
+  }
+  .syntax--pseudo-element {
+    color: @base0;
+    font-weight: bold;
+  }
+  .syntax--pseudo-class {
+
+    &.syntax--attribute-name {
+      .syntax--pseudo-element;
+    }
+  }
+}

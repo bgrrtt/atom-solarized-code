@@ -1,0 +1,15 @@
+{
+  "name": "solarized-code-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A Solarized (Dark) Syntax Theme for increased code readability.",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/bgrrtt/atom-solarized-code",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

@@ -1,0 +1,207 @@
+@import "variables";
+
+atom-text-editor,atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+  }
+
+  .gutter .line-number {
+    opacity: 1;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @magenta;
+  }
+
+  .syntax--cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .line-number.syntax--cursor-line-no-selection {
+    background-color: @syntax-gutter-background-color-selected;
+  }
+}
+
+// see: https://github.syntax--com/atom/bracket-matcher/issues/46
+.bracket-matcher .region {
+  box-shadow: inset 0px 0px 1px #d6f4f2;
+  border-width: 0px;
+  background-color: rgba(42, 161, 152, 0.2);
+
+  //background-color: @base03;
+  //border: 1px solid @base2;
+  //border-radius: 4px;
+}
+
+.syntax--comment {
+  color: @syntax-comment-color;
+  font-style: italic;
+}
+
+.syntax--entity {
+  color: @syntax-text-color;
+
+  .syntax--punctuation {
+    color: @base0;
+    font-weight: bold;
+  }
+
+  &.syntax--name {
+    color: @orange;
+  }
+  &.syntax--name.syntax--tag {
+    color: @blue;
+  }
+  &.syntax--constant {
+    .syntax--punctuation;
+  }
+  &.syntax--attribute-name {
+    color: @syntax-comment-color;
+  }
+}
+
+.syntax--keyword {
+  color: @green;
+  font-weight: bold;
+
+  &.syntax--other {
+    &.syntax--special-method {
+      color: @orange;
+    }
+  }
+}
+
+.syntax--storage.syntax--type {
+  color: @yellow;
+}
+
+.syntax--storage.syntax--class.syntax--type {
+  color: @magenta;
+}
+
+.syntax--storage.syntax--modifier {
+  color: @blue;
+}
+
+.syntax--constant {
+  color: @yellow;
+
+  &.syntax--numeric,
+  &.syntax--boolean,
+  &.syntax--symbol, &.syntax--symbol .syntax--punctuation {
+    color: @cyan;
+  }
+
+  &.syntax--symbol.syntax--hashkey {
+    color: @red;
+
+    .syntax--punctuation {
+      color: @red;
+    }
+  }
+}
+
+.syntax--delimiter, .syntax--brace {
+  color: @blue;
+}
+
+.syntax--delimiter, .syntax--round {
+  color: @green;
+}
+
+.syntax--delimiter.syntax--period {
+  color: @green;
+}
+
+.syntax--invalid.syntax--deprecated {
+  text-decoration: underline;
+  color: @red;
+}
+
+.syntax--invalid.syntax--illegal {
+  color: @red;
+}
+
+.syntax--method .syntax--name {
+  color: @blue;
+}
+
+.syntax--operator.syntax--assignment {
+  color: @syntax-emphasized-color;
+}
+
+.syntax--parameter {
+  color: @red;
+}
+
+.syntax--property-name {
+  color: @green;
+}
+
+.syntax--property-value {
+  .syntax--unit {
+    color: @syntax-text-color;
+  }
+}
+
+.syntax--string {
+  color: @cyan;
+
+  .syntax--punctuation.syntax--string {
+    color: @cyan;
+  }
+
+  &.syntax--regexp {
+    color: @cyan;
+
+    .syntax--string.syntax--regexp.syntax--arbitrary-repetition {
+      color: @cyan;
+    }
+  }
+}
+
+.syntax--variable {
+  color: @cyan;
+
+  &.syntax--instance {
+    color: @blue;
+  }
+
+  &.syntax--constant {
+    color: @syntax-comment-color;
+  }
+
+  &.syntax--parameter {
+    color: @red;
+  }
+}
+
+.syntax--support {
+  color: @blue;
+
+  &.syntax--class {
+    color: @red;
+  }
+}
+
+.syntax--terminator {
+  color: @green;
+}
